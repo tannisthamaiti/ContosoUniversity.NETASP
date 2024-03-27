@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Ovy\\Desktop\\Conestoga_PROG8541\\week10\\ContosoUniversity\\ContosoUniversity\\ContosoUniversity.csproj": {}
+    "C:\\Users\\Ovy\\Desktop\\Conestoga_PROG8146\\week12\\ContosoUniversity\\ContosoUniversity.NETASP\\ContosoUniversity\\ContosoUniversity.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Ovy\\Desktop\\Conestoga_PROG8541\\week10\\ContosoUniversity\\ContosoUniversity\\ContosoUniversity.csproj": {
+    "C:\\Users\\Ovy\\Desktop\\Conestoga_PROG8146\\week12\\ContosoUniversity\\ContosoUniversity.NETASP\\ContosoUniversity\\ContosoUniversity.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Ovy\\Desktop\\Conestoga_PROG8541\\week10\\ContosoUniversity\\ContosoUniversity\\ContosoUniversity.csproj",
+        "projectUniqueName": "C:\\Users\\Ovy\\Desktop\\Conestoga_PROG8146\\week12\\ContosoUniversity\\ContosoUniversity.NETASP\\ContosoUniversity\\ContosoUniversity.csproj",
         "projectName": "ContosoUniversity",
-        "projectPath": "C:\\Users\\Ovy\\Desktop\\Conestoga_PROG8541\\week10\\ContosoUniversity\\ContosoUniversity\\ContosoUniversity.csproj",
+        "projectPath": "C:\\Users\\Ovy\\Desktop\\Conestoga_PROG8146\\week12\\ContosoUniversity\\ContosoUniversity.NETASP\\ContosoUniversity\\ContosoUniversity.csproj",
         "packagesPath": "C:\\Users\\Ovy\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Ovy\\Desktop\\Conestoga_PROG8541\\week10\\ContosoUniversity\\ContosoUniversity\\obj\\",
+        "outputPath": "C:\\Users\\Ovy\\Desktop\\Conestoga_PROG8146\\week12\\ContosoUniversity\\ContosoUniversity.NETASP\\ContosoUniversity\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Ovy\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "7vDoYlOlSehJUmsP/bKlVPpNwHVNAOppWGLi1FhvgxHFQjUV9//CmEo4V+NY65nRvaI+coofy0pxhOdt5n/RcA==",
+  "dgSpecHash": "nxH2UPwMhyBYUPlISHByET+kCYcNozM0XKeQUGAKdmwwX8CO+DMOrNZPNANYTYQc9WzLqr4uEfmDFKfXe+PhjA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Ovy\\Desktop\\Conestoga_PROG8541\\week10\\ContosoUniversity\\ContosoUniversity\\ContosoUniversity.csproj",
+  "projectFilePath": "C:\\Users\\Ovy\\Desktop\\Conestoga_PROG8146\\week12\\ContosoUniversity\\ContosoUniversity.NETASP\\ContosoUniversity\\ContosoUniversity.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Ovy\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\Ovy\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",
