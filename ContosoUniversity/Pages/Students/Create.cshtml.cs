@@ -30,11 +30,11 @@ namespace ContosoUniversity.Pages.Students
         // To protect from overposting attacks, see https://aka.ms/RazorPagesCRUD
         public async Task<IActionResult> OnPostAsync()
         {
-            var emptyStudent = new Student();
+           
             byte[] bytes = null;
-            if (emptyStudent.ImageFile != null)
+            if (Student.ImageFile != null)
             {
-                using Stream fs = emptyStudent.ImageFile.OpenReadStream();
+                using Stream fs = Student.ImageFile.OpenReadStream();
                 {
                     Console.WriteLine(fs);
                     using (BinaryReader reader = new BinaryReader(fs))
@@ -48,11 +48,11 @@ namespace ContosoUniversity.Pages.Students
 
 
                 if (await TryUpdateModelAsync<Student>(
-                emptyStudent,
+                Student,
                 "student",   // Prefix for form value.
                 s => s.FirstMidName, s => s.LastName, s => s.EnrollmentDate, s => s.Year, s => s.StudentImageData))
             {
-                _context.Students.Add(emptyStudent);
+                _context.Students.Add(Student);
                 await _context.SaveChangesAsync();
                 return RedirectToPage("./Index");
             }
