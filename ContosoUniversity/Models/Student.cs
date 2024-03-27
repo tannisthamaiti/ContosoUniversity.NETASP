@@ -9,6 +9,7 @@ namespace ContosoUniversity.Models
         public string FirstMidName { get; set; }
         public DateTime EnrollmentDate { get; set; }
 
+        public string Year { get; set; }
         public string StudentImageData { get; set; }
 
         [NotMapped]
