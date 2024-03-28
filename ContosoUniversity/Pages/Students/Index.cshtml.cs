@@ -38,8 +38,9 @@ namespace ContosoUniversity.Pages.Students
                                              select s;
             if (!String.IsNullOrEmpty(searchString))
             {
-                studentsIQ = studentsIQ.Where(s => s.LastName.ToUpper().Contains(searchString)
-                                       || s.FirstMidName.ToUpper().Contains(searchString));
+                studentsIQ = studentsIQ.Where(s => s.LastName.Contains(searchString)
+                                       || s.FirstMidName.Contains(searchString));
+              
             }
             switch (sortOrder)
             {
@@ -56,7 +57,7 @@ namespace ContosoUniversity.Pages.Students
                     studentsIQ = studentsIQ.OrderBy(s => s.LastName);
                     break;
             }
-            Students = await _context.Student.ToListAsync();
+            Students = await studentsIQ.AsNoTracking().ToListAsync();
         }
     }
 }
