@@ -26,15 +26,21 @@ namespace ContosoUniversity.Pages.Students
         public string CurrentSort { get; set; }
         public IList<Student> Students { get;set; } = default!;
 
-        public async Task OnGetAsync(string sortOrder)
+        public async Task OnGetAsync(string sortOrder, string searchString)
         {
-            
+            //Filter
+            CurrentFilter = searchString;
+
             NameSort = String.IsNullOrEmpty(sortOrder) ? "name_desc" : "";
             DateSort = sortOrder == "Date" ? "date_desc" : "Date";
 
             IQueryable<Student> studentsIQ = from s in _context.Students
                                              select s;
-
+            if (!String.IsNullOrEmpty(searchString))
+            {
+                studentsIQ = studentsIQ.Where(s => s.LastName.ToUpper().Contains(searchString)
+                                       || s.FirstMidName.ToUpper().Contains(searchString));
+            }
             switch (sortOrder)
             {
                 case "name_desc":
