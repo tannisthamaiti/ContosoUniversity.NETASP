@@ -1,0 +1,66 @@
+﻿@page
+@model ContosoUniversity.Pages.Students.CreateModel
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Create</h1>
+
+<h4>Student</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post" enctype="multipart/form-data">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Student.LastName" class="control-label"></label>
+                <input asp-for="Student.LastName" class="form-control" />
+                <span asp-validation-for="Student.LastName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Student.FirstMidName" class="control-label"></label>
+                <input asp-for="Student.FirstMidName" class="form-control" />
+                <span asp-validation-for="Student.FirstMidName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Student.EnrollmentDate" class="control-label"></label>
+                <input asp-for="Student.EnrollmentDate" class="form-control" />
+                <span asp-validation-for="Student.EnrollmentDate" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Student.Year" class="control-label"></label>
+                <input asp-for="Student.Year" class="form-control" />
+                <span asp-validation-for="Student.Year" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Student.StudentUnivID" class="control-label"></label>
+                <input asp-for="Student.StudentUnivID" class="form-control" />
+                <span asp-validation-for="Student.StudentUnivID" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Student.numCoursesEnrolled" class="control-label"></label>
+                <input asp-for="Student.numCoursesEnrolled" class="form-control" />
+                <span asp-validation-for="Student.numCoursesEnrolled" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Student.ImageFile" class="control-label"></label>
+                <input type="file" asp-for="Student.ImageFile" class="form-control" />
+                <span asp-validation-for="Student.ImageFile" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-page="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}
